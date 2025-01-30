@@ -62,7 +62,7 @@ export default function StudyTimer() {
     }
   }, [isMuted]);
 
-  // New effect to handle volume changes
+  
   useEffect(() => {
     if (audioRef.current) {
       audioRef.current.volume = volume / 100;
@@ -126,10 +126,8 @@ export default function StudyTimer() {
     <div className="fixed inset-0 w-screen h-screen overflow-hidden bg-black">
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: "url('Screenshot 2025-01-30 211311.png')",
-          opacity: 0.6
-        }}
+        style={{ backgroundImage: "url('/bg2.png')", opacity:0.6 }}
+
       />
 
       <RainDrops />
@@ -167,7 +165,7 @@ export default function StudyTimer() {
         </Button>
       </div>
 
-      {/* Rest of the component remains the same */}
+      {/* la la la la  */}
       <div className="relative z-20 flex flex-col items-center justify-center h-full">
         <AnimatePresence>
           {showTitle && (
